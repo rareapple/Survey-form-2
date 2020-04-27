@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Survey form</title>
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+
+
+  <body>
+
+    <div class="container">
+      <header class="header">
+        <h1 id="title">E Corp Survey Form</h1>
+
+        <p id="description">
+          Thank you for taking the time to help us</p> </header>
+      <form id="survey-form" action="index.html" method="post">
+        <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+        <label id="number-label" for="number">Enter your age</label>
+        <input type="number" name="number" id="number" min="0" max="99" placeholder="Enter age" required>
+        </div>
+        <div class="form-group" class="question">
+        <p>Would you recommend E Corp to a friend?</p>
+        <label>
+        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
+
+        <label>
+        <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+
+        <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+
+        </div>
+
+        <div class="form-group" class="question">
+        <p>
+        Please select your current policies:
+        <span class="clue">(Check all that apply)</span>
+        </p>
+
+        <label>
+        <input name="prefer" value="banking" type="checkbox" class="input-checkbox">banking</label>
+
+        <label>
+        <input name="prefer" value="phone-services" type="checkbox" class="input-checkbox">Phone services</label>
+
+        <label>
+        <input name="prefer" value="insurance" type="checkbox" class="input-checkbox">insurance</label>
+
+        <label>
+        <input name="prefer" value="other" type="checkbox" class="input-checkbox">other</label>
+
+        </div>
+
+        <div class="form-group" id="question">
+        <p>
+        What is your favorite service from E Corp?
+        </p>
+        <select id="dropdown" name="mostLike" required>
+        <option disabled="" selected="" value="">Select an option</option>
+        <option value="banking">Banking</option>
+        <option value="Phone">Phone</option>
+        <option value="Internet">Internet</option>
+        <option value="other">other</option>
+        </select>
+        </div>
+        <div class="form-group" id="question">
+        <p>What other services would you be interested in?</p>
+        <label name="prefer" value="phone-services" type="checkbox">Phone Servcies</label>
+        <label name="prefer" value="personal-insurance" type="checkbox">Personal Insurance</label>
+        <label name="prefer" value="car-insurance" type="checkbox">Car Insurance</label>
+
+        </div>
+        <div class="form-group" id="question">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+
+        </div>
+        <div class="form-group">
+        <input id="submit" type="submit" name="submit-all" value="submit">
+        </div>
+      </form>
+    </div>
+  </body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>

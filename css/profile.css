@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  box-sizing:
+
+}
+
+
+body {
+  background-image: url(https://external-preview.redd.it/MTGP452nVpBCjtBi3LhcWxNQB_wqDZGGHqiAh1n4gcY.png?auto=webp&s=7346b64e284a25a5f996a7fc49a77bcb39b0ec2e);
+  background-size: cover;
+  z-index: -1;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: auto;
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.container {
+  border: 10px solid black;
+  width: 55vw;
+  margin: 0 auto;
+  border-radius: 1em;
+  background: rgba(3, 3, 3, 0.5);
+
+}
+
+#survey-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+#question p {
+  margin-bottom: 1em;
+}
